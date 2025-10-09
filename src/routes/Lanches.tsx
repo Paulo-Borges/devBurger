@@ -105,7 +105,7 @@ const Lanches = () => {
       imagem: "/hamb10.jpeg",
       marca: "Siga bem cainhoneiro",
       classe: "Lanches",
-      tipo: "Enguiça blidado",
+      tipo: "Enguiça blindado",
       argumento:
         "Uma delícia de lanche, sabor sem igual um gosto diferente de tudo que já provei. Super recomendo.",
       preco: "R$ 30,00",
