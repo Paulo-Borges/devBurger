@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex bg-bg  w-full justify-between items-center px-4 relative ">
+    <nav className="flex bg-bg  w-full md:w-[780px] 2xl:w-[1526px] justify-between items-center px-4 relative ">
       <div>
         <img
           src={Logo}
@@ -37,7 +37,9 @@ const Navbar = () => {
           max-sm:p-4 
           max-sm:flex-col 
           max-sm:gap-2
+          md:gap-5
           max-sm:z-10
+          md:flex
           ${isMenuOpen ? "flex" : "hidden"}
         
         `}

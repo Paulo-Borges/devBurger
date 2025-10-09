@@ -135,42 +135,44 @@ const Lanches = () => {
   return (
     <main>
       <h1 className="text-base py-4 text-xl">Lanches</h1>
-      {lanches.map((lanche) => {
-        return (
-          <div
-            className=" flex flex-col border border-bebidas mb-8"
-            key={lanche.id}
-          >
-            <div>
-              <img
-                src={lanche.imagem}
-                alt="hamburger"
-                className="block w-full h-[200px] object-cover"
-              />
-            </div>
-            <div className="">
+      <div className="md:grid md:grid-cols-2 2xl:grid-cols-3 gap-4">
+        {lanches.map((lanche) => {
+          return (
+            <div
+              className=" flex flex-col border border-bebidas mb-8"
+              key={lanche.id}
+            >
+              <div>
+                <img
+                  src={lanche.imagem}
+                  alt="hamburger"
+                  className="block w-full h-[200px] 2xl:h-[400px] object-cover"
+                />
+              </div>
               <div className="">
-                <div className="flex justify-between px-2 font-semibold">
-                  <p className="">{lanche.marca}</p>
-                  <p className="">{lanche.classe}</p>
+                <div className="">
+                  <div className="flex justify-between px-2 font-semibold">
+                    <p className="">{lanche.marca}</p>
+                    <p className="">{lanche.classe}</p>
+                  </div>
+                  <p className="px-2 font-semibold">{lanche.tipo}</p>
+                  <p className="px-2 text-sm mt-4">{lanche.argumento}</p>
+                  <ul className="flex justify-between px-2 pt-4 mb-1">
+                    <li>
+                      <p className="font-semibold text-base">{lanche.preco}</p>
+                    </li>
+                    <li className="bg-base px-5 pb-1 rounded text-white">
+                      <a className="text-[10px]" href="./sacola.html">
+                        Adicionar
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <p className="px-2 font-semibold">{lanche.tipo}</p>
-                <p className="px-2 text-sm mt-4">{lanche.argumento}</p>
-                <ul className="flex justify-between px-2 pt-4 mb-1">
-                  <li>
-                    <p className="font-semibold text-base">{lanche.preco}</p>
-                  </li>
-                  <li className="bg-base px-5 pb-1 rounded text-white">
-                    <a className="text-[10px]" href="./sacola.html">
-                      Adicionar
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </main>
   );
 };
