@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Logo from "../../public/Fast Food.png";
+import Logo from "/Fast Food.png";
 import { FaUser } from "react-icons/fa";
 import { FaCartPlus } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
