@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex bg-bg  w-[350px] justify-between items-center px-4 relative ">
+    <nav className="flex bg-bg  w-full justify-between items-center px-4 relative ">
       <div>
         <img
           src={Logo}

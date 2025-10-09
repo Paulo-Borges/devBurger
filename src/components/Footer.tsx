@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className=" bg-bg  w-[350px] text-white flex flex-col gap-4 p-4">
+    <footer className=" bg-bg  w-full text-white flex flex-col gap-4 p-4">
       <h2 className="justify-start items-start">NewsLetter</h2>
       <div className="flex gap-2">
         <input
