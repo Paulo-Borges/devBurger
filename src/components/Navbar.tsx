@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Logo from "/Fast Food.png";
 import { FaUser } from "react-icons/fa";
@@ -10,6 +10,18 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  type activeProps = {
+    bg: "string";
+    text: "string";
+    padding: "2px";
+    isActive: boolean;
+  };
+
+  const getActiveLinkClasses = ({ isActive }: activeProps) => {
+    return isActive
+      ? "bg-base text-white p-2"
+      : "bg-transparent text-white p-2 ";
   };
 
   return (
@@ -31,6 +43,8 @@ const Navbar = () => {
         className={`
           max-sm:absolute 
           max-sm:top-14 
+          md:pt-5
+          2xl:pb-4
           max-sm:left-0 
           max-sm:w-full 
           max-sm:bg-bg 
@@ -45,34 +59,37 @@ const Navbar = () => {
         `}
       >
         <li>
-          <Link to="/" className="text-white">
+          <NavLink to="/" className="text-white">
             Promoções
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/bebidas" className="text-white">
+          <NavLink to="/bebidas" className="text-white">
             Bebidas
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/lanches" className="text-white">
+          <NavLink
+            to="/lanches"
+            className="text-white bg-transparent active:bg-base hover:bg-base"
+          >
             Lanches
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contato" className="text-white">
+          <NavLink to="/contato" className="text-white">
             Contato
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/sacola" className="text-white">
+          <NavLink to="/sacola" className="text-white">
             <FaCartPlus />
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/login" className="text-white">
+          <NavLink to="/login" className="text-white">
             <FaUser />
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
