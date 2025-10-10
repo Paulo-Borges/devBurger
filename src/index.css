@@ -7,6 +7,7 @@
   --color-footer: #ff8515;
   --color-bg: #525252;
   --color-bebidas: #e5e5e5;
+  --breakpoint-3xl: 120rem;
 }
 
 :root {
@@ -15,9 +16,9 @@
 }
 
 body {
-  margin: 0;
+  display: flex;
+  justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  display: flex;
   min-width: 320px;
 }
