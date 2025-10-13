@@ -16,9 +16,7 @@
 }
 
 body {
-  display: flex;
   justify-content: center;
   padding: 20px;
-  box-sizing: border-box;
   min-width: 320px;
 }

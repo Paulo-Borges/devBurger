@@ -11,21 +11,21 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  type activeProps = {
-    bg: "string";
-    text: "string";
-    padding: "2px";
-    isActive: boolean;
-  };
+  // type activeProps = {
+  //   bg: "string";
+  //   text: "string";
+  //   padding: "2px";
+  //   isActive: boolean;
+  // };
 
-  const getActiveLinkClasses = ({ isActive }: activeProps) => {
-    return isActive
-      ? "bg-base text-white p-2"
-      : "bg-transparent text-white p-2 ";
-  };
+  // const getActiveLinkClasses = ({ isActive }: activeProps) => {
+  //   return isActive
+  //     ? "bg-base text-white p-2"
+  //     : "bg-transparent text-white p-2 ";
+  // };
 
   return (
-    <nav className="flex bg-bg  w-full md:w-[780px] 2xl:w-[1526px] 3xl:w-[2000px] justify-between items-center px-4 relative ">
+    <nav className="flex bg-bg  w-full justify-between items-center px-4 relative ">
       <div>
         <img
           src={Logo}
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
       <div>
         <RxHamburgerMenu
-          className="text-white cursor-pointer sm:hidden"
+          className="text-white cursor-pointer md:hidden"
           onClick={toggleMenu}
         />
       </div>
