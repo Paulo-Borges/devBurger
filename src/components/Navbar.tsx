@@ -59,7 +59,7 @@ const Navbar = () => {
         `}
       >
         <li>
-          <NavLink to="/" className="text-white">
+          <NavLink to="/promocao" className="text-white">
             Promoções
           </NavLink>
         </li>
