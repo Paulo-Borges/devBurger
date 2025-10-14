@@ -1,4 +1,4 @@
-const Promocao = () => {
+const Home = () => {
   type promocoesProps = {
     id: number;
     imagem: string;
@@ -157,4 +157,4 @@ const Promocao = () => {
   );
 };
 
-export default Promocao;
+export default Home;

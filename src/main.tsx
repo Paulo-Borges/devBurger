@@ -9,7 +9,7 @@ import Contato from "./routes/Contato.tsx";
 import Lanches from "./routes/Lanches.tsx";
 import Login from "./routes/Login.tsx";
 import Sacola from "./routes/Sacola.tsx";
-import Promocao from "./routes/Promocao.tsx";
+import Home from "./routes/Home.tsx";
 
 const router = createBrowserRouter([
   {
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
         element: <Sacola />,
       },
       {
-        path: "promocao",
-        element: <Promocao />,
+        index: true,
+        element: <Home />,
       },
     ],
   },
