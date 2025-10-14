@@ -6,7 +6,12 @@ import { FaCartPlus } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
+  const [isnavbarOpen, setIsNavbarOpen] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isnavbarOpen);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -25,7 +30,11 @@ const Navbar = () => {
   // };
 
   return (
-    <nav className="flex bg-bg  w-full justify-between items-center px-4 relative ">
+    <nav
+      className={`flex bg-bg  w-full justify-between items-center px-4 relative  ${
+        isnavbarOpen ? "flex " : "hidden"
+      }`}
+    >
       <div>
         <img
           src={Logo}
@@ -59,7 +68,7 @@ const Navbar = () => {
         `}
       >
         <li>
-          <NavLink to="/promocao" className="text-white">
+          <NavLink to="/promocao" className="text-white" onClick={toggleMenu}>
             Promoções
           </NavLink>
         </li>
