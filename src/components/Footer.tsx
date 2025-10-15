@@ -23,11 +23,19 @@ const Footer = () => {
       <div>
         <h2 className="md:text-2xl md:mb-4">Redes sociais</h2>
         <div className="flex gap-8">
-          <Link to="https://x.com/paulobo17118573" target="_blank">
+          <Link
+            to="https://x.com/paulobo17118573"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaXTwitter />
           </Link>
 
-          <Link to="https://github.com/Paulo-Borges" target="_blank">
+          <Link
+            to="https://github.com/Paulo-Borges"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
           </Link>
         </div>
