@@ -153,6 +153,40 @@ const Home = () => {
           );
         })}
       </div>
+      <section className="flex flex-col  bg-[url(/grande2.jpeg)] bg-no-repeat bg-cover  mb-4  w-full h-40 md:h-[400px] 2xl:h-[700px] 3xl:h-[900px]">
+        <h1 className="flex mx-auto text-white pt-4 2xl:pt-8 text-2xl md:text-5xl 2xl:text-7xl">
+          Promoção do momento
+        </h1>
+        <p className="flex pl-65 2xl:pl-280 md:pl-150 text-white font-semibold pt-10 md:pt-20 2xl:pt-60 text-[18px] md:text-2xl 2xl:text-4xl">
+          40% off
+        </p>
+      </section>
+      <section className="flex justify-center space-x-4 md:space-x-20 2xl:space-x-40">
+        <div>
+          <img src="/card-icon.png" alt="" className="w-18 md:w-25 2xl:w-40" />
+        </div>
+        <div>
+          <img
+            src="/1Vector.png"
+            alt=""
+            className="w-13 mt-3 md:w-20 2xl:w-37"
+          />
+        </div>
+        <div>
+          <img
+            src="/card-icon-2.png"
+            alt=""
+            className="w-18 md:w-25 2xl:w-40"
+          />
+        </div>
+        <div>
+          <img
+            src="/1Vector.png"
+            alt=""
+            className="w-13 mt-3 md:w-20 2xl:w-37"
+          />
+        </div>
+      </section>
     </main>
   );
 };
